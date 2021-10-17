@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reto2</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="funcionesG32.js">  </script>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>Alquiler de bicicletas</h1>
+        <h2>Registro bicicletas</h2>
+        <div>
+        <input type="number" id="miId" placeholder="ID"> </input>
+        <input type="text" id="brand" placeholder="Marca"> </input>
+        <input type="number" id="model" placeholder="Modelo"> </input>
+        <input type="number" id="categoryId" placeholder="Categoria"> </input>
+        <input type="text" id="name" placeholder="Nombre"> </input>
+        </div>
+        <br><br>
+        <button  onclick="registro()">Registrar</button>
+        <button  onclick="consultar()">Ver registros</button>
+        <button  onclick="actualizar()">Editar información</button>
+        <br><br>
+       <div>
+            <table>
+                <tbody id="miResultado">
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <h2>Registro clientes</h2>
+
+        <div>
+            <input type="number" id="miId2" placeholder="ID"> </input>
+            <input type="text" id="name2" placeholder="Nombre"> </input> 
+            <input type="text" id="email" placeholder="Email"> </input>
+            <input type="number" id="age" placeholder="Edad"> </input>
+            
+            </div>
+            <br><br>
+            <button  onclick="registroCliente()">Registrar</button>
+            <button  onclick="consultarCliente()">Ver clientes</button>
+            <button  onclick="actualizarCliente()">Editar información</button>
+            <br><br>
+           <div>
+                <table>
+                    <tbody id="miResultado2">
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        <h2>Registro mensajes</h2>
+
+        <div>
+            <input type="number" id="miId3" placeholder="ID"> </input>
+            <input type="text" id="messagetext" placeholder="Mensaje"> </input> 
+            
+            
+            </div>
+            <br><br>
+            <button  onclick="registroMensaje()">Registrar</button>
+            <button  onclick="consultarMensaje()">Ver mensajes</button>
+            <button  onclick="actualizarMensaje()">Editar información</button>
+            <br><br>
+           <div>
+                <table>
+                    <tbody id="miResultado3">
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </body>
+
+</html>
